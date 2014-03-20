@@ -417,7 +417,7 @@ decode.ieee802_11_frame = function (raw_packet, offset) {
         // skip this is CF-Poll (No data)
     }
     else if(ret.type == 2) { // data
-        ret.llc = decode.logicalLinkControl(raw_packet, offset);
+        // ret.llc = decode.logicalLinkControl(raw_packet, offset);
     }
 
     return ret;
